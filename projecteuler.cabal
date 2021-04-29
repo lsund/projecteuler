@@ -1,0 +1,129 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: ddf1072f52b48d003931cf6cc81bef5831ec1cb0651093456dd1451f955a127f
+
+name:           projecteuler
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/projecteuler#readme>
+homepage:       https://github.com/githubuser/projecteuler#readme
+bug-reports:    https://github.com/githubuser/projecteuler/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/projecteuler
+
+library
+  exposed-modules:
+      Problem001
+      Problem002
+      Problem003
+      Problem004
+      Problem005
+      Problem006
+      Problem007
+      Problem008
+      Problem009
+      Problem010
+      Problem011
+      Problem012
+      Problem013
+      Problem014
+      Problem015
+      Problem016
+      Problem017
+      Problem018
+      Problem019
+      Problem020
+      Problem021
+      Problem022
+      Problem023
+      Problem024
+      Problem025
+      Problem026
+      Problem027
+      Problem028
+      Problem029
+      Problem030
+      Problem031
+      Problem032
+      Problem033
+      Problem034
+      Problem035
+      Problem036
+      Problem037
+      Problem038
+      Problem039
+      Problem040
+      Problem041
+      Problem042
+      Problem043
+      Problem044
+      Problem045
+      Problem046
+      Problem047
+      Problem048
+      Problem049
+      Problem051
+      Problem052
+      Problem067
+      Util
+  other-modules:
+      Paths_projecteuler
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , data-ordlist
+    , split
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable projecteuler-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_projecteuler
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , data-ordlist
+    , projecteuler
+    , split
+    , text
+    , vector
+  default-language: Haskell2010
+
+test-suite projecteuler-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_projecteuler
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , data-ordlist
+    , projecteuler
+    , split
+    , text
+    , vector
+  default-language: Haskell2010
