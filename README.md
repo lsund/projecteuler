@@ -1,3 +1,3 @@
 # projecteuler
 
-Haskell solutions (https://projecteuler.net)[Project Euler] problems.
+Haskell solutions [Project Euler](https://projecteuler.net) problems.
