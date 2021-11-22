@@ -1,9 +1,10 @@
 
 module Problem009 where
 
+-- Update 22-11-2021
+solution = [a * b * c | a <- [1..498], b <- [succ a..498], c <- [succ b..498], a ** 2 + b ** 2 == c ** 2, a + b + c == 1000]
+
 isTriplet a b c = a ^ 2 + b ^ 2 == c ^ 2
-
-
 
 isCandidate a b c target =
 	a + b + c == target && isTriplet a b c
@@ -18,8 +19,6 @@ test target a b c =
 		[a, b, c]
 	else
 		test target a b (c + 1)
-
-
 
 solve :: IO ()
 solve =
