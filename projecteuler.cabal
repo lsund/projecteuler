@@ -4,26 +4,24 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ddf1072f52b48d003931cf6cc81bef5831ec1cb0651093456dd1451f955a127f
+-- hash: 5ae0f00b36208a07f14185a68c27d98b044cf05ef904d03f63bfbe5ca56358bb
 
 name:           projecteuler
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/projecteuler#readme>
-homepage:       https://github.com/githubuser/projecteuler#readme
-bug-reports:    https://github.com/githubuser/projecteuler/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2021 Author name here
+description:    Please see the README on GitHub at <https://github.com/lsund/projecteuler>
+homepage:       https://github.com/lsund/projecteuler#readme
+bug-reports:    https://github.com/lsund/projecteuler/issues
+author:         Ludvig Sundstroem
+maintainer:     lud.sund@gmail.com
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/projecteuler
+  location: https://github.com/lsund/projecteuler
 
 library
   exposed-modules:

@@ -1,13 +1,41 @@
-
 module Problem002 where
 
-import Data.List (tail)
-
--- update 2021-11-22
 solution2 = sum $ filter even $ takeWhile (< 4000000) fibs
 
 fibs :: [Int]
 fibs = 1 : 2 : zipWith (+) fibs (tail fibs)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 collectvals :: [Int] -> Int -> [Int]
 collectvals l i = if l !! i > 4000000 then [] else l !! i : collectvals l (i + 1)
